@@ -8,10 +8,10 @@ import HomeIcon from "@mui/icons-material/Home";
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import RateReviewIcon from '@mui/icons-material/RateReview';
 import { useNavigate } from "react-router-dom";
-import "./Navbar.css"
+import "./NavigationBottom.css"
 
 
-export function Navbar() {
+export function NavigationBottom() {
     const [value, setValue] = React.useState(0);
     const navigate = useNavigate();
 

@@ -63,7 +63,7 @@ export function Login() {
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <img src={avatarLogin} alt="" />
                         <h2 className="title">Welcome</h2>
-                        <div className="input-div one">
+                        <div className="input-div one" id='top-input'>
                             <div className="i">
                                 <i className="fas fa-user"></i>
                             </div>

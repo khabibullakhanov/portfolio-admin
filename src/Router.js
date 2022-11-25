@@ -4,19 +4,21 @@ import { Home } from "./Pages/Home/Home";
 import "./Assets/Css/Global.css";
 import { Portfolios } from "./Pages/Portfolios/Portfolios";
 import { Feedback } from "./Pages/Feedback/Feedback";
-import { Navbar } from "./Companents/Navbar/Navbar";
+import { NavigationBottom } from "./Companents/Navbar/NavigationBottom";
 import Paper from '@mui/material/Paper';
+import { NavigationTop } from "./Companents/Navbar/NavigationTop";
 
 export function Router() {
     return (
         <div id="router">
+            <NavigationTop />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/portfolios" element={<Portfolios />} />
                 <Route path="/feedback" element={<Feedback />} />
             </Routes>
             <Paper sx={MyStyle.Paper} elevation={3}>
-                <Navbar />
+                <NavigationBottom />
             </Paper>
         </div>
     );
