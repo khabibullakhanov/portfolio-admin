@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<style>
-  #Error {
-    width: 100%;
-    height: 100vh;
-    background: #ffffff !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: none;
-  }
-
-  #Error > h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #1976d2;
-    max-width: 70%;
-  }
-
-  @media (min-width: 770px) {
-    #root {
-      display: none !important;
-    }
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khabibullakhanov</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="shortcut icon" href="./My Logo.png" type="image/x-icon" />
+  </head>
+  <style>
     #Error {
-      display: flex !important;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: none;
     }
-  }
-</style>
-<body>
-  <div id="root"></div>
-  <div id="Error">
-    <h3>The program is designed only for tablets and mobile devices</h3>
-  </div>
-</body>
-<script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./worker.js").then(
-      function (registration) {},
-      function (error) {
-        console.log("Service worker registration failed:", error);
+
+    #Error > h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1976d2;
+      max-width: 70%;
+    }
+
+    @media (min-width: 770px) {
+      #root {
+        display: none !important;
       }
-    );
-  } else {
-    console.log("Service workers are not supported.");
-  }
-</script>
+
+      #Error {
+        display: flex !important;
+      }
+    }
+  </style>
+  <body>
+    <div id="root"></div>
+    <div id="Error">
+      <h3>The program is designed only for tablets and mobile devices</h3>
+    </div>
+  </body>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./worker.js").then(
+        function (registration) {},
+        function (error) {
+          console.log("Service worker registration failed:", error);
+        }
+      );
+    } else {
+      console.log("Service workers are not supported.");
+    }
+  </script>
 </html>
