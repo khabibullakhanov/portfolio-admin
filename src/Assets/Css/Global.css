@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 0.13rem;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #d6d6d66c;
+}
+
+#root {
+    max-width: 768px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative !important;
+}
+
+#router {
+    width: "100%";
+    height: "100vh";
+    background-color: "#fafafa";
+    position: "relative";
+}
