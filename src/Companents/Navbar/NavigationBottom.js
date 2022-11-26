@@ -47,16 +47,18 @@ export function NavigationBottom() {
                         }}
                     /> */}
                     <BottomNavigationAction
+                        id="navigation-bottom-icons"
                         label="Home"
-                        icon={<HomeIcon />}
+                        icon={<HomeIcon style={{ color: "grey" }} />}
                         onClick={() => {
                             navigate("/");
                         }}
                     />
                     <BottomNavigationAction
+                        id="navigation-bottom-icons"
                         label="Portfolios"
                         icon={
-                            <AddBoxIcon />
+                            <AddBoxIcon style={{ color: "grey" }} />
                         }
                         onClick={() => {
                             navigate("/portfolios");
@@ -64,9 +66,10 @@ export function NavigationBottom() {
                     />
 
                     <BottomNavigationAction
+                        id="navigation-bottom-icons"
                         label="Feedback"
                         icon={
-                            <RateReviewIcon />
+                            <RateReviewIcon style={{ color: "grey" }} />
                         }
                         onClick={() => {
                             navigate("/feedback");

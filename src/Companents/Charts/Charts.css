@@ -1,0 +1,14 @@
+#reportGuests {
+    width: 95%;
+    height: 40vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 968px) {
+    #reportGuests> :nth-child(1) {
+        height: 40vh !important;
+        ;
+    }
+}

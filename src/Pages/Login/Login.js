@@ -18,7 +18,7 @@ export function Login() {
 
     const onSubmit = (data) => {
         const { login, password, chek } = data;
-
+        dispatch(acLoading(true))
         axios("https://honey.pandashop.uz/login", {
             method: "POST",
             headers: {
@@ -30,6 +30,7 @@ export function Login() {
             },
         })
             .then((res) => {
+                dispatch(acLoading(false))
                 if (chek) {
                     localStorage.setItem("admin", JSON.stringify(res.data))
                     dispatch(acAdmin(res.data));
@@ -42,6 +43,7 @@ export function Login() {
                 });
             })
             .catch((err) => {
+                dispatch(acLoading(false))
                 console.log(err);
                 enqueueSnackbar(err.response.data.message, {
                     variant: "error",
