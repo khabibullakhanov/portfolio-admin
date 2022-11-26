@@ -7,6 +7,8 @@ import { Feedback } from "./Pages/Feedback/Feedback";
 import { NavigationBottom } from "./Companents/Navbar/NavigationBottom";
 import Paper from '@mui/material/Paper';
 import { NavigationTop } from "./Companents/Navbar/NavigationTop";
+import { AddPortfolio } from "./Pages/CrudPortfolio/AddPortfolio";
+import { EditPortfolio } from "./Pages/CrudPortfolio/EditPortfolio";
 
 export function Router() {
     return (
@@ -16,6 +18,8 @@ export function Router() {
                 <Route path="/" element={<Home />} />
                 <Route path="/portfolios" element={<Portfolios />} />
                 <Route path="/feedback" element={<Feedback />} />
+                <Route path="/add_portfolio" element={<AddPortfolio />} />
+                <Route path="/portfolios/view_portfolio" element={<EditPortfolio/>} />
             </Routes>
             <Paper sx={MyStyle.Paper} elevation={3}>
                 <NavigationBottom />

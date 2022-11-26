@@ -1,3 +1,12 @@
+#portfolios-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  overflow-y: auto;
+}
+
 #portfolios-main-container>h3 {
     padding-block: 5%;
     text-align: center;
@@ -93,3 +102,11 @@
     padding: 0 10px;
   }
   
+
+  
+  @media screen and (max-width: 410px) {
+    #most-seen-modal-about div {
+      display: flex;
+      flex-direction: column;
+    }
+  }

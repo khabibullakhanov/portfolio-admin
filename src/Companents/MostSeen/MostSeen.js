@@ -67,7 +67,7 @@ export function MostSeen() {
                                 <TableCell component="th" align="center" scope="row">
                                     <IconButton
                                         onClick={() => {
-                                            navigate(`product_view${row.id}`)
+                                            navigate(`view_portfolio`)
                                         }}
                                     >
                                         <RemoveRedEyeIcon />

@@ -1,10 +1,14 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../Icons/Poppins-Medium.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    letter-spacing: 0.13rem;
-    -webkit-tap-highlight-color: transparent;
+    letter-spacing: 0.07rem;
+    font-family: Poppins;
 }
 
 body {

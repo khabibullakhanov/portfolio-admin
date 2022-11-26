@@ -29,6 +29,7 @@ export function Portfolios() {
             likes: "324",
             moreInfo: "lorem ipsum dolor sit amet",
             img: exampleImg,
+            view: "115",
         },
         {
             id: "12",
@@ -38,6 +39,7 @@ export function Portfolios() {
             likes: "324",
             moreInfo: "lorem ipsum dolor sit amet",
             img: exampleImg,
+            view: "115",
         },
         {
             id: "12",
@@ -47,6 +49,7 @@ export function Portfolios() {
             likes: "324",
             moreInfo: "lorem ipsum dolor sit amet",
             img: exampleImg,
+            view: "115",
         },
         {
             id: "12",
@@ -56,6 +59,7 @@ export function Portfolios() {
             likes: "324",
             moreInfo: "lorem ipsum dolor sit amet",
             img: exampleImg,
+            view: "115",
         },
         {
             id: "12",
@@ -65,6 +69,7 @@ export function Portfolios() {
             likes: "324",
             moreInfo: "lorem ipsum dolor sit amet",
             img: exampleImg,
+            view: "115",
         },
         {
             id: "12",
@@ -74,6 +79,7 @@ export function Portfolios() {
             likes: "324",
             moreInfo: "lorem ipsum dolor sit amet",
             img: exampleImg,
+            view: "115",
         },
         {
             id: "12",
@@ -83,6 +89,7 @@ export function Portfolios() {
             likes: "324",
             moreInfo: "lorem ipsum dolor sit amet",
             img: exampleImg,
+            view: "115",
         },
         {
             id: "12",
@@ -92,6 +99,7 @@ export function Portfolios() {
             likes: "324",
             moreInfo: "lorem ipsum dolor sit amet",
             img: exampleImg,
+            view: "115",
         },
     ];
 
@@ -102,21 +110,18 @@ export function Portfolios() {
             }
         });
     });
-    console.log(data.length);
 
     return (
         <div id='portfolios-main-container'>
             <h3>About Portfolios</h3>
             <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 338 }} aria-label="simple table">
+                <Table sx={{ minWidth: 500 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
                             <TableCell>№</TableCell>
                             <TableCell>Image</TableCell>
                             <TableCell align="center">Name</TableCell>
-                            {/* <TableCell align="center">Git Hub</TableCell>
-                            <TableCell align="center">Netlify</TableCell>
-                            <TableCell align="center">Likes</TableCell> */}
+                            <TableCell align="center">Viewers</TableCell>
                             <TableCell align="center">See More</TableCell>
                         </TableRow>
                     </TableHead>
@@ -135,6 +140,9 @@ export function Portfolios() {
                                 <TableCell component="th" align="center" scope="row">
                                     {row.name}
                                 </TableCell>
+                                <TableCell component="th" align="center" scope="row">
+                                    {row.view}
+                                </TableCell>
                                 {/* <TableCell align="center">{row.github}</TableCell>
                                 <TableCell align="center">{row.netlify}</TableCell>
                                 <TableCell align="center">{row.likes}</TableCell> */}
@@ -149,7 +157,7 @@ export function Portfolios() {
                                     </IconButton>
                                     <IconButton
                                         onClick={() => {
-                                            navigate(`portfolio_veiw${row.id}`)
+                                            navigate(`view_portfolio`)
                                         }}
                                     >
                                         <EditIcon />
@@ -184,25 +192,25 @@ export function Portfolios() {
                         <div id="most-seen-modal-about">
                             <div>
                                 <h5>Portfolio Name :</h5>
-                                <p>{modalData.name}</p>;
+                                <p>{modalData.name};</p>
                             </div>
                             <div>
                                 <h5>
                                     Git Hub :
                                 </h5>
-                                <p>{modalData.github}</p>;
+                                <p>{modalData.github};</p>
                             </div>
                             <div>
                                 <h5>
                                     Netlify Link:
                                 </h5>
-                                <p id="most-seen-about-modalData">{modalData.netlify}</p>;
+                                <p id="most-seen-about-modalData">{modalData.netlify};</p>
                             </div>
                             <div>
                                 <h5>
                                     Likes :
                                 </h5>
-                                <p>{modalData.likes}</p>;
+                                <p>{modalData.likes};</p>
                             </div>
                             <div>
                                 <h5>

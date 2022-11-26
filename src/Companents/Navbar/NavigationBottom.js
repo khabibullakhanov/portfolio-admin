@@ -4,6 +4,7 @@ import {
     BottomNavigation,
     BottomNavigationAction,
 } from "@mui/material";
+import AddBoxSharpIcon from '@mui/icons-material/AddBoxSharp';
 import HomeIcon from "@mui/icons-material/Home";
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import RateReviewIcon from '@mui/icons-material/RateReview';
@@ -73,6 +74,16 @@ export function NavigationBottom() {
                         }
                         onClick={() => {
                             navigate("/feedback");
+                        }}
+                    />
+                    <BottomNavigationAction
+                        id="navigation-bottom-icons"
+                        label="Add"
+                        icon={
+                            <AddBoxSharpIcon style={{ color: "grey" }} />
+                        }
+                        onClick={() => {
+                            navigate("/add_portfolio");
                         }}
                     />
                 </BottomNavigation>
