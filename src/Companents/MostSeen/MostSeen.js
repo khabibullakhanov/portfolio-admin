@@ -8,8 +8,6 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
-import CheckCircleOutlineSharpIcon from '@mui/icons-material/CheckCircleOutlineSharp';
 import { IconButton } from '@mui/material';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import { useNavigate } from 'react-router-dom';
@@ -49,7 +47,7 @@ export function MostSeen() {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {product.map((row, index) => (
+                        {mostSeenProducts.map((row, index) => (
                             <TableRow
                                 key={index}
                             // sx={{ '&:last-child td, &:last-child th': { border: 0 } }}

@@ -56,11 +56,11 @@ export function Feedback() {
         },
     ]
 
-    const current = new Date();
-    const year = current.getFullYear();
-    const month = current.getMonth()
-    const fullTime = current.toLocaleTimeString()
-    const fullDate = fullTime + " " + month + " " + year
+    // const current = new Date();
+    // const year = current.getFullYear();
+    // const month = current.getMonth()
+    // const fullTime = current.toLocaleTimeString()
+    // const fullDate = fullTime + " " + month + " " + year
     // console.log(fullTime + " " + month + " " + year);
 
     return (
