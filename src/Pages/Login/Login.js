@@ -17,8 +17,8 @@ export function Login() {
 
 
     const onSubmit = (data) => {
-        const { login, password, chek } = data;
         dispatch(acLoading(true))
+        const { login, password, chek } = data;
         axios("https://honey.pandashop.uz/login", {
             method: "POST",
             headers: {

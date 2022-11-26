@@ -3,9 +3,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 85vh;
+    height: auto;
+    max-height: 87vh;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    gap: 5rem;
+    overflow-y: auto;
 }
 
-#home-main-container> :last-child {
+/* #home-main-container> :last-child {
     height: 40vh;
-}
+} */

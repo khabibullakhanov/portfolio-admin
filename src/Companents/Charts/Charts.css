@@ -6,9 +6,8 @@
     align-items: center;
 }
 
-@media (max-width: 968px) {
+/* @media (max-width: 968px) {
     #reportGuests> :nth-child(1) {
-        height: 40vh !important;
-        ;
+        height: 40vh !important; ;
     }
-}
+} */

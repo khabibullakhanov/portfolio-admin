@@ -84,6 +84,15 @@ export function Portfolios() {
             moreInfo: "lorem ipsum dolor sit amet",
             img: exampleImg,
         },
+        {
+            id: "12",
+            name: "Portfolio-1",
+            github: "https://github.com/khabibullakhanov",
+            netlify: "https://honey-store.netlify.app/",
+            likes: "324",
+            moreInfo: "lorem ipsum dolor sit amet",
+            img: exampleImg,
+        },
     ];
 
     useEffect(() => {
@@ -99,7 +108,7 @@ export function Portfolios() {
         <div id='portfolios-main-container'>
             <h3>About Portfolios</h3>
             <TableContainer component={Paper}>
-                <Table sx={{ minHeight: 440 }} aria-label="simple table">
+                <Table sx={{ minWidth: 338 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
                             <TableCell>№</TableCell>

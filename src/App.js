@@ -7,7 +7,7 @@ import { Backdrop, CircularProgress } from "@mui/material";
 
 function App() {
 
-  const loading = useSelector((state) => state.reLoading);
+  const loading = useSelector((state) => state.loading);
   const admin = useSelector((state) => state.admin)
 
   return (
