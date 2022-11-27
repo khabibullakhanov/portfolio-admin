@@ -11,12 +11,13 @@ import Paper from '@mui/material/Paper';
 import { IconButton } from '@mui/material';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import CloseIcon from '@mui/icons-material/Close';
-
+import { acLoading } from '../../Redux/Loading';
+import { useDispatch } from 'react-redux';
 
 
 
 export function MostSeen() {
-
+    const dispatch = useDispatch()
     const [product, setProduct] = useState([])
     const [modalData, setModalData] = useState([]);
     const [images, setImages] = useState([]);
@@ -27,11 +28,14 @@ export function MostSeen() {
     });
 
     useEffect(() => {
+        dispatch(acLoading(true))
         axios("https://honey.pandashop.uz/product/view")
             .then((res) => {
                 setProduct(res.data);
+                dispatch(acLoading(false))
             })
             .catch((err) => {
+                dispatch(acLoading(false))
                 console.log(err.response.data);
             });
     }, []);
