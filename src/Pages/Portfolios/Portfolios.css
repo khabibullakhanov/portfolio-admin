@@ -76,13 +76,13 @@
     gap: 0.2rem;
   }
 
-  #most-seen-modal-about div p {
+  #most-seen-modal-about div a,p {
     font-size:11px;
   }
 
   .mostseen_modal_img>figure {
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
     margin: 10% auto;
   }
   

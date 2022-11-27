@@ -4,13 +4,12 @@ import {
     BottomNavigation,
     BottomNavigationAction,
 } from "@mui/material";
-import AddBoxSharpIcon from '@mui/icons-material/AddBoxSharp';
 import HomeIcon from "@mui/icons-material/Home";
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import RateReviewIcon from '@mui/icons-material/RateReview';
 import { useNavigate } from "react-router-dom";
 import "./NavigationBottom.css"
-
+import DashboardIcon from '@mui/icons-material/Dashboard';
 
 export function NavigationBottom() {
     const [value, setValue] = React.useState(0);
@@ -59,7 +58,7 @@ export function NavigationBottom() {
                         id="navigation-bottom-icons"
                         label="Portfolios"
                         icon={
-                            <AddBoxIcon style={{ color: "grey" }} />
+                            <DashboardIcon style={{ color: "grey" }} />
                         }
                         onClick={() => {
                             navigate("/portfolios");
@@ -80,7 +79,7 @@ export function NavigationBottom() {
                         id="navigation-bottom-icons"
                         label="Add"
                         icon={
-                            <AddBoxSharpIcon style={{ color: "grey" }} />
+                            <AddBoxIcon style={{ color: "grey" }} />
                         }
                         onClick={() => {
                             navigate("/add_portfolio");

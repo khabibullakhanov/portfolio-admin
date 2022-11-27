@@ -198,13 +198,14 @@ export function Portfolios() {
                                 <h5>
                                     Git Hub :
                                 </h5>
-                                <p>{modalData.github};</p>
+                                {/* <a>{modalData.github};</a> */}
+                                <a href={modalData.github} target="_blank" rel="noopener noreferrer">{modalData.github}</a>
                             </div>
                             <div>
                                 <h5>
                                     Netlify Link:
                                 </h5>
-                                <p id="most-seen-about-modalData">{modalData.netlify};</p>
+                                <a href={modalData.netlify} target="_blank" rel="noopener noreferrer">{modalData.netlify}</a>
                             </div>
                             <div>
                                 <h5>

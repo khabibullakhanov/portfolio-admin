@@ -3,10 +3,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 80%;
 }
 
-#add-main-container>h2 {
+#add-main-container>h3 {
     padding-block: 5%;
 }
 
@@ -30,6 +29,21 @@
     height: 40px;
     width: 90%;
     padding-left: 5%;
+    color: grey;
+}
+
+#add-main-container>form textarea {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 6px;
+    height: 100px;
+    padding-top: 3%;
+    color: grey;
+    width: 90%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #add-main-container>form label {
@@ -62,22 +76,22 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-  }
-  
-  #figure>img {
+}
+
+#figure>img {
     width: 100%;
     height: 100%;
-  }
-  
-  #figure>button {
+}
+
+#figure>button {
     background: none;
     border: none;
     position: absolute;
-    top: -4px;
-    right: -3px;
-  }
+    top: 4px;
+    right: 3px;
+}
 
-  #add-portfolio-btn {
+#add-portfolio-btn {
     background-color: dodgerblue;
     outline: none;
     cursor: pointer;
@@ -88,4 +102,4 @@
     color: white;
     border-radius: 6px;
     margin-top: 10%;
-  }
+}

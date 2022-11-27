@@ -18,7 +18,7 @@ export function AddPortfolio() {
 
     return (
         <div id='add-main-container'>
-            <h2>Add New Portfolio</h2>
+            <h3>Add New Portfolio</h3>
             <form
                 onSubmit={(e) => {
                     e.preventDefault()
@@ -27,6 +27,7 @@ export function AddPortfolio() {
                 }
                 }>
                 <input
+                    autoComplete='off'
                     type="text"
                     required
                     onChange={(e) => {
@@ -34,6 +35,7 @@ export function AddPortfolio() {
                     }}
                     placeholder='Write name...' />
                 <input
+                    autoComplete='off'
                     type="text"
                     required
                     onChange={(e) => {
@@ -41,6 +43,7 @@ export function AddPortfolio() {
                     }}
                     placeholder='Write git hub link...' />
                 <input
+                    autoComplete='off'
                     type="text"
                     required
                     onChange={(e) => {
@@ -77,20 +80,26 @@ export function AddPortfolio() {
                                         setImgData(imgData.filter((item, i) => i !== index));
                                     }}
                                 >
-                                        <ClearSharpIcon />
+                                    <ClearSharpIcon />
                                 </button>
                                 <img src={URL.createObjectURL(img)} alt="" />
                             </figure>
                         </div>
                     );
                 })}
-                <input
+                {/* <input
                     type="text"
+                    autoComplete='off'
+                    required
+                placeholder='Write about...' /> */}
+                <textarea
+                    placeholder='Type about...'
+                    autoComplete='off'
                     required
                     onChange={(e) => {
                         setPortfolio({ ...portfolio, about: e.target.value })
                     }}
-                    placeholder='Write about...' />
+                ></textarea>
                 <button type='submit' id='add-portfolio-btn'>Add New Portfolio</button>
             </form>
         </div >
