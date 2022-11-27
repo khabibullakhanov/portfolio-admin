@@ -2,3 +2,9 @@
     padding-block: 5%;
     text-align: center;
 }
+
+#tell-td> a {
+    color: rgb(2, 118, 234);
+    font-size: 14px;
+    text-decoration: underline;
+}
