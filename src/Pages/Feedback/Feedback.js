@@ -71,7 +71,7 @@ export function Feedback() {
                 }}
             >Feedback</h3>
             <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 655 }} aria-label="simple table">
+                <Table sx={{ minWidth: 700 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
                             <TableCell>№</TableCell>
@@ -84,7 +84,7 @@ export function Feedback() {
                     </TableHead>
                     <TableBody>
                         {users.map((row, index) => {
-                            const tell = `tel:{row.phone}`
+                            const tell = `tel:${row.phone}`
                             return (
                                 <TableRow
                                     key={index}
@@ -99,14 +99,14 @@ export function Feedback() {
                                     <TableCell id='tell-td' component="th" align="center" scope="row">
                                         <a href={tell}>{row.phone}</a>
                                     </TableCell>
-                                    <TableCell component="th" align="center" scope="row">
-                                        {row.email}
+                                    <TableCell id='email-td' component="th" align="center" scope="row">
+                                        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">{row.email}</a>
                                     </TableCell>
                                     <TableCell component="th" align="center" scope="row">
                                         {row.date}
                                     </TableCell>
                                     <TableCell component="th" align="center" scope="row">
-                                        {row.status ? <ErrorOutlineIcon /> : <CheckCircleOutlineSharpIcon />}
+                                        {row.status ? <ErrorOutlineIcon style={{ color: "red" }} /> : <CheckCircleOutlineSharpIcon style={{ color: "green" }} />}
                                     </TableCell>
                                 </TableRow>
                             )
