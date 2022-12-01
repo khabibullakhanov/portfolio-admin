@@ -38,7 +38,7 @@ export function MostSeen() {
                 dispatch(acLoading(false))
                 console.log(err.response.data);
             });
-    }, []);
+    }, [dispatch]);
     return (
         // <div>
         <>
