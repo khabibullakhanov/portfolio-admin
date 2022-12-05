@@ -184,7 +184,7 @@ export function Portfolios() {
                     {/* {modalData.map((item, index) => {
                         return ( */}
                     <div id='portfolio-see-inside'>
-                        <div className="mostseen_modal_img">
+                        <div id='portfolio-images' className="mostseen_modal_img">
                             <figure>
                                 <img src={modalData.img} alt="" />
                             </figure>

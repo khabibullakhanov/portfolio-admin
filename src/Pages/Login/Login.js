@@ -45,10 +45,9 @@ export function Login() {
             .catch((err) => {
                 dispatch(acLoading(false))
                 // console.log(err.response.data.message);
-                enqueueSnackbar(err.response.message, {
+                enqueueSnackbar(err.response.data.message, {
                     variant: "error",
                 });
-                dispatch(acLoading(false));
             });
         reset()
 
